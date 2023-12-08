@@ -33,6 +33,11 @@ github_username: ka1amita
 linkedin_username: matej-kala
 facebook_username: matej.kala
 
+# Custom collections
+
+collections:
+  - projects
+
 # Build settings
 theme: minima
 

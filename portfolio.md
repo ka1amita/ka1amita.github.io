@@ -1,7 +1,9 @@
 ---
 layout: page
-title: My Portfolio
+title: Portfolio
 permalink: /portfolio/
 ---
 
+Check out some of my work
 
+{% include portfolio.html %}
