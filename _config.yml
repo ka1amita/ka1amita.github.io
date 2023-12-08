@@ -19,11 +19,14 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Matej Kala's homepage
+author: Matej Kala
 email: kalamatej@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to my website. This site serves as a hub for all my other sites, portfolio and as a blog.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ka1amita.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Social links
 #twitter_username: KalaMatej
 instagram_username: matej.kala
 github_username: ka1amita
@@ -32,6 +35,7 @@ facebook_username: matej.kala
 
 # Build settings
 theme: minima
+
 plugins:
   - jekyll-feed
 
