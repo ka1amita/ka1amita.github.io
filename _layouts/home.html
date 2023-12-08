@@ -12,6 +12,7 @@
 
 {%- include hero.html -%}
 
+{%- unless page.content == "" -%}
 <!-- from default layout -->
 <main class="page-content" aria-label="Content">
 
@@ -52,6 +53,7 @@
 
   </div>
 </main>
+{%- endunless -%}
 
 {%- include footer.html -%}
 
