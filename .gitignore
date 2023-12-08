@@ -5,6 +5,9 @@ _site
 .jekyll-metadata
 vendor
 
-### IntelliJ IDEA ###
+### Local default template copies ###
+/_layouts/_*.html
+/_includes/_*.html
 
+### IntelliJ IDEA ###
 .idea/

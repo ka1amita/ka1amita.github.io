@@ -1,0 +1,17 @@
+<div class="hero">
+    <div class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <h1>
+        {%- if page.title == "" -%}
+          {{ site.author | escape }}
+        {%- else -%}
+          {{ page.title | escape }}
+        {%- endif -%}
+      </h1>
+      <!--  add div.row and inside div.col wrappers -->
+      {%- if page.hero-text -%}
+        <h2>{{ page.hero-text | escape }}</h2>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
