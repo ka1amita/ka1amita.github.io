@@ -36,7 +36,9 @@ facebook_username: matej.kala
 # Custom collections
 
 collections:
-  - projects
+  projects:
+    output: true
+    permalink: /:collection/:title
 
 # Build settings
 theme: minima
@@ -65,3 +67,21 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true
+
+show_excerpts: true # set to true to show excerpts on the homepage
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+  - scope:
+      path: ""
+    values:
+      layout: "default"
