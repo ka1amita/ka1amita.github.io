@@ -19,3 +19,14 @@
   min-height: calc(100vh - 3.5em);
   text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+  .site-nav {
+    background-color: transparent;
+    border: 0;
+  }
+
+  .site-nav .menu-icon > svg {
+    fill: white;
+  }
+}
