@@ -5,9 +5,14 @@
   background-size: cover;
 }
 
-.hero .wrapper {
-  font-family: 'Dosis', sans-serif;
+.hero .page-content .wrapper,
+.hero .wrapper .site-title,
+.hero .site-nav .page-link {
   color: white;
+}
+
+.hero .page-content .wrapper {
+  font-family: 'Dosis', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
