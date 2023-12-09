@@ -1,0 +1,93 @@
+.projects .row {
+}
+.projects .card {
+  width: 300px;
+
+  margin: 1em 0;
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 20px black;
+
+  text-align: center;
+}
+
+.projects .card,
+.projects .project-header-img {
+  border-radius: 0.5rem;
+}
+
+.projects .card-header {
+  position: relative;
+}
+
+.projects .project-header-img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.projects .card-header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.projects .card-main,
+.projects .card-footer {
+  padding: 0.5em;
+}
+
+.projects .techs-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}
+.projects .card-main p {
+  margin: 1em 0;
+}
+
+.projects .tech-img {
+  height: 3em;
+  padding: 0.2em;
+  color: transparent;
+}
+
+.projects .btn-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.projects .btn {
+  margin: 0 0.25em;
+  border: 0;
+  border-radius: 0.5em;
+  box-shadow: 0 0 10px black;
+
+  background-color: black;
+  cursor: pointer;
+
+  padding: 0.35em 0.7em;
+  color: white;
+  text-decoration: none;
+}
+
+.projects .btn-github {
+  background-color: #212529;
+  box-shadow: 0 0 10px #212529;
+  color: #fff;
+}
+
+.projects .btn-live {
+  background-color: #0d6efd;
+  box-shadow: 0 0 10px #0d6efd;
+  color: #fff;
+}
