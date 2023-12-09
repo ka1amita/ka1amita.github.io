@@ -21,12 +21,12 @@
 }
 
 @media screen and (max-width: 600px) {
-  .site-nav {
+  .hero .site-nav {
     background-color: transparent;
     border: 0;
   }
 
-  .site-nav .menu-icon > svg {
+  .hero .site-nav .menu-icon > svg {
     fill: white;
   }
 }
