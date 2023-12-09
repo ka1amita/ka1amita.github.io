@@ -5,9 +5,14 @@
       <div class="card-header">
         <img class="project-header-img" src="{{ '/assets/images/project.png' | relative_url }}" alt="{{ project.title }}">
         <a target="_blank" href="{{ project.url }}">
-        <div class="card-header-title">
-          <h2>{{ project.title }}</h2>
-          {{ project.description }}
+          <div class="card-header-content">
+            <div class="card-header-text">
+<!--            <div class="card-header-title">-->
+              <h2>{{ project.title }}</h2>
+              <p>{{ project.description }}</p>
+              {{ project.excerpt }}
+<!--            </div>-->
+            </div>
           </div>
         </a>
       </div>
