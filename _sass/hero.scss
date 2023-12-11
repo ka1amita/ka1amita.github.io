@@ -5,6 +5,10 @@
   background-size: cover;
 }
 
+.hero .site-header {
+  border-bottom: 0 solid #e8e8e8;
+}
+
 .hero .page-content .wrapper,
 .hero .wrapper .site-title,
 .hero .site-nav .page-link {
@@ -19,38 +23,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  //text-align: center;
 }
 
 /* Social Media */
-.hero-social .social-media-list {
-  margin: 0.75em 0;
+.hero-social .header-icons {
+  margin-top: 0.5em;
+}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hero-social .header-icons a {
+  margin: 5px;
+}
+
+.hero-social .social-icon {
+  border-radius: 50%;
+  border: 1px solid white;
+
+  padding: 10px;
+  font-size: 1.5em;
   text-align: center;
+  color: white;
+
+  transition: all .5s;
 }
 
-.hero-social .social-media-list li {
-  text-align: center;
-  margin: 0 1em;
+.header-icons .social-icon:active,
+.header-icons .social-icon:hover {
+  color: #1a222c;
+  background: white;
 }
-
-.hero-social .social-media-list li + li {
-  padding-top: 0;
-}
-
-.hero-social .social-media-list span {
-  display: none;
-}
-
-.hero-social .svg-icon {
-  fill: white; // the same as color
-  transform: scale(2); // setting height and width doesn't increase size any more
-  padding-right: 0;
-  vertical-align: bottom;
-}
+/* Social Media End */
 
 @media screen and (max-width: 600px) {
   .hero .site-nav {
