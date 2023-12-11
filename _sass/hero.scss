@@ -13,11 +13,43 @@
 
 .hero .page-content .wrapper {
   font-family: 'Dosis', sans-serif;
+  min-height: calc(100vh - 3.5em);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: calc(100vh - 3.5em);
+  align-items: center;
+  //text-align: center;
+}
+
+/* Social Media */
+.hero-social .social-media-list {
+  margin: 0.75em 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+}
+
+.hero-social .social-media-list li {
+  text-align: center;
+  margin: 0 1em;
+}
+
+.hero-social .social-media-list li + li {
+  padding-top: 0;
+}
+
+.hero-social .social-media-list span {
+  display: none;
+}
+
+.hero-social .svg-icon {
+  fill: white; // the same as color
+  transform: scale(2); // setting height and width doesn't increase size any more
+  padding-right: 0;
+  vertical-align: bottom;
 }
 
 @media screen and (max-width: 600px) {
