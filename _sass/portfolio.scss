@@ -1,6 +1,6 @@
 .projects .row {
 }
-.projects .card {
+.projects .project {
   box-shadow: 0 0 10px #212529;
 
   width: 300px;
@@ -9,16 +9,16 @@
   border-radius: 0.5rem;
 }
 
-.projects .card-header {
+.projects .project-header {
   position: relative;
 }
 
 .projects .project-header-img,
-.card-header-anchor {
+.project-header-anchor {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.projects .card-header-anchor {
+.projects .project-header-anchor {
   position: absolute;
   top: 0;
   left: 0;
@@ -33,14 +33,14 @@
   box-sizing: border-box;
 }
 
-.projects .card-header-anchor:hover {
+.projects .project-header-anchor:hover {
   opacity: 0.8;
   transition-duration: 0.5s;
   transition-property: all;
   transition-timing-function: cubic-bezier(.4,0,.2,1);
 }
 
-.projects .card-header-content {
+.projects .project-header-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,9 +49,9 @@ height: 100%;
   box-sizing: border-box;
 }
 
-.projects .card-header-content,
-.projects .card-main,
-.projects .card-footer {
+.projects .project-header-content,
+.projects .project-main,
+.projects .project-footer {
   box-sizing: border-box;
 
   padding: 1em;
@@ -61,12 +61,12 @@ height: 100%;
   -moz-hyphens: manual;
 }
 
-.card-header-content-padding {
+.project-header-content-padding {
   position: absolute;
   left: 0;
   bottom: 0;
 
-  height: 1em; // the same as ,card-header-content padding!
+  height: 1em; // the same as ,project-header-content padding!
   width: 100%;
   background-color: inherit;
 }
@@ -126,9 +126,9 @@ height: 100%;
   box-shadow: inset 0 0 5px #0e76fe;
 }
 
-.card-header-anchor,
-.card-header-anchor:visited,
-.card-header-anchor:hover {
+.project-header-anchor,
+.project-header-anchor:visited,
+.project-header-anchor:hover {
   text-decoration-line: none;
   -moz-text-decoration-line: none;
 }

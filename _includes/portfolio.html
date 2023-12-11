@@ -1,21 +1,21 @@
 <div class="projects">
   <div class="row">
     {% for project in site.projects %}
-    <div class="card">
-      <div class="card-header">
+    <div class="project">
+      <div class="project-header">
         <img class="project-header-img" src="{{ '/assets/images/project.png' | relative_url }}" alt="{{ project.title }}">
-        <a class="card-header-anchor" target="_blank" href="{{ project.url }}">
-          <div class="card-header-content">
+        <a class="project-header-anchor" target="_blank" href="{{ project.url }}">
+          <div class="project-header-content">
               <h2>{{ project.title }}</h2>
               <p>{{ project.description }}</p>
               {%- if site.show_excerpts -%}
                 {{ project.excerpt }}
               {%- endif -%}
           </div>
-          <div class="card-header-content-padding"></div>
+          <div class="project-header-content-padding"></div>
         </a>
       </div>
-      <div class="card-main">
+      <div class="project-main">
         {%- if project.techs -%}
         <div class="techs-row">
           {% for tech in project.techs %}
@@ -24,7 +24,7 @@
         </div>
         {%- endif -%}
 <!--      </div>-->
-<!--      <div class="card-footer">-->
+<!--      <div class="project-footer">-->
         <div class="btn-row">
           {%- if project.github_url -%}
           <a role="button" tabindex="0" href="https://github.com/{{ site.github_username }}/{{ project.github_url }}" target="_blank" class="btn btn-github">View on GitHub</a>
