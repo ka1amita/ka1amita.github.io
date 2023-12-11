@@ -1,7 +1,5 @@
 <div class="hero">
-
   {%- include header.html -%}
-
     <div class="page-content" aria-label="Content">
     <div class="wrapper">
       <h1>
@@ -11,19 +9,13 @@
           {{ page.hero-title | escape }}
         {%- endunless -%}
       </h1>
-      <!--  add div.row and inside div.col wrappers -->
       {%- if page.hero-text -%}
-        <h2>{{ page.hero-text | escape }}</h2>
+      <h2>
+        {{ page.hero-text | escape }}
+      </h2>
       {%- endif -%}
-
       <div class="hero-social">
-        <div class="header-icons">
-          {%- if site.email -%}<a aria-label="Send email" href="mailto:{{ site.email | escape }}"><i class="social-icon fa fa-envelope"></i></a>{%- endif -%}
-          {%- if site.github_username -%}<a aria-label="My Github" target="_blank" href="https://github.com/{{ site.facebook_username| cgi_escape | escape }}"><i class="social-icon fa-brands fa-github" aria-hidden="true"></i></a>{%- endif -%}
-          {%- if site.linkedin_username -%}<a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/{{ site.facebook_username| cgi_escape | escape }}"><i class="social-icon fa-brands fa-linkedin" aria-hidden="true"></i></a>{%- endif -%}
-          {%- if site.facebook_username -%}<a aria-label="My Facebook" target="_blank" href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}"><i class="social-icon fa-brands fa-facebook" aria-hidden="true"></i></a>{%- endif -%}
-          {%- if site.instagram_username -%}<a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/{{ site.facebook_username| cgi_escape | escape }}"><i class="social-icon fa-brands fa-instagram" aria-hidden="true"></i></a>{%- endif -%}
-        </div>
+        {%- include hero-social.html -%}
       </div>
     </div>
   </div>
