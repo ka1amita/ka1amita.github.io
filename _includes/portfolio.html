@@ -25,8 +25,8 @@
 <!--    </div>-->
 <!--    <div class="project-footer">-->
       <div class="btn-row">
-        {%- if project.github_url -%}
-        <a role="button" tabindex="0" href="https://github.com/{{ site.github_username }}/{{ project.github_url }}" target="_blank" class="btn btn-github">View on GitHub</a>
+        {%- if project.github_repository -%}
+        <a role="button" tabindex="0" href="https://github.com/{{ site.github_username }}/{{ project.github_repository }}" target="_blank" class="btn btn-github">View on GitHub</a>
         {%- endif -%}
         {%- if project.live_url -%}
         <a role="button" tabindex="0" href="{{  project.live_url  }}" target="_blank" class="btn btn-live">View Live</a>
