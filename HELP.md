@@ -16,6 +16,9 @@
 > [!TIP]
 > To fix the error, run `bundle add webrick`, then re-running `bundle exec jekyll serve`.
 
+> [!WARNING]
+> don't use `--incremental` or `-I` because then you have to manually delete jekyll cache by `jekyll clean`
+
 > Jekyll is an active open source project that is updated frequently. If the github-pages gem on
 > your computer is out of date with the github-pages gem on the GitHub Pages server, your site may
 > look different when built locally than when published on GitHub.

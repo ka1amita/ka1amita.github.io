@@ -1,0 +1,38 @@
+<div class="projects">
+    {% for project in site.projects %}
+  <div class="project">
+    <div class="project-header">
+      <img class="project-header-img" src="{{ baseurl }}/assets/images/{{ project.background-img }}" alt="{{ project.background }}">
+      <a class="project-header-anchor" target="_blank" href="{{ project.url }}">
+        <div class="project-header-content">
+          <h2>{{ project.title | escape }}</h2>
+          <p>{{ project.description | escape }}</p>
+          {%- if site.show_excerpts -%}
+          {{ project.excerpt }}
+          {%- endif -%}
+        </div>
+        <div class="project-header-content-padding"></div>
+      </a>
+    </div>
+    <div class="project-main">
+      {%- if project.techs -%}
+      <div class="techs-row">
+        {% for tech in project.techs %}
+      <img class="tech-img" loading="lazy" src="{{ site.baseurl }}/assets/icons/{{ tech }}.svg" alt="{{ tech }}" />
+        {% endfor %}
+      </div>
+      {%- endif -%}
+<!--    </div>-->
+<!--    <div class="project-footer">-->
+      <div class="btn-row">
+        {%- if project.github_url -%}
+        <a role="button" tabindex="0" href="https://github.com/{{ site.github_username }}/{{ project.github_url }}" target="_blank" class="btn btn-github">View on GitHub</a>
+        {%- endif -%}
+        {%- if project.live_url -%}
+        <a role="button" tabindex="0" href="{{  project.live_url  }}" target="_blank" class="btn btn-live">View Live</a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
