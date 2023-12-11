@@ -1,7 +1,5 @@
 <div class="hero">
-
   {%- include header.html -%}
-
     <div class="page-content" aria-label="Content">
     <div class="wrapper">
       <h1>
@@ -11,13 +9,13 @@
           {{ page.hero-title | escape }}
         {%- endunless -%}
       </h1>
-      <!--  add div.row and inside div.col wrappers -->
       {%- if page.hero-text -%}
-        <h2>{{ page.hero-text | escape }}</h2>
+      <h2>
+        {{ page.hero-text | escape }}
+      </h2>
       {%- endif -%}
-
       <div class="hero-social">
-        {%- include social.html -%}
+        {%- include hero-social.html -%}
       </div>
     </div>
   </div>

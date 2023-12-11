@@ -26,11 +26,11 @@
 }
 
 /* Social Media */
-.hero-social .header-icons {
+.hero-social {
   margin-top: 0.5em;
 }
 
-.hero-social .header-icons a {
+.hero-social a {
   margin: 5px;
 }
 
@@ -39,15 +39,17 @@
   border: 1px solid white;
 
   padding: 10px;
-  font-size: 1.5em;
+  font-size: 2em;
+  width: 1em;
+  height: 1em;
   text-align: center;
-  color: white;
 
+  color: white;
   transition: all .5s;
 }
 
-.header-icons .social-icon:active,
-.header-icons .social-icon:hover {
+.hero-social .social-icon:active,
+.hero-social .social-icon:hover {
   color: #1a222c;
   background: white;
 }

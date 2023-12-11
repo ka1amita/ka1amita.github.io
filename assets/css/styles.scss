@@ -43,22 +43,3 @@ max-width: calc(1000px - (30px * 2)); // default is 800px instead of 1000px
 .btn:disabled {
   box-shadow: 0 0 10px red;
 }
-
-.page-link:hover {
-  text-decoration: none;
-}
-
-.footer-col-1 {
-  width: -webkit-calc(30% - (30px / 2)); // natively 35%
-  width: calc(30% - (30px / 2));
-}
-
-.footer-col-2 {
-  width: -webkit-calc(25% - (30px / 2)); // natively 20%
-  width: calc(25% - (30px / 2));
-}
-
-.footer-col-3 {
-  width: -webkit-calc(45% - (30px / 2)); // natively 45%
-  width: calc(45% - (30px / 2));
-}
