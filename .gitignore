@@ -1,5 +1,12 @@
-/assets/icons/*.jpg
-/assets/icons/*.png
+### Non-svg Icons ###
+/assets/icons/*.*
+!/assets/icons/*.svg
+
+### Local Example Files ###
+/_posts/*example*.md
+/_posts/*example*.markdown
+/_projects/*example*.md
+/_projects/*example*.markdown
 
 ### Jekyll ###
 _site
