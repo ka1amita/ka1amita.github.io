@@ -15,6 +15,10 @@
       {%- if page.hero-text -%}
         <h2>{{ page.hero-text | escape }}</h2>
       {%- endif -%}
+
+      <div class="hero-social">
+        {%- include social.html -%}
+      </div>
     </div>
   </div>
 </div>
