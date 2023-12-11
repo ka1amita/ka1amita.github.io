@@ -1,3 +1,6 @@
+/assets/icons/*.jpg
+/assets/icons/*.png
+
 ### Jekyll ###
 _site
 .sass-cache
