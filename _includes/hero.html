@@ -17,7 +17,13 @@
       {%- endif -%}
 
       <div class="hero-social">
-        {%- include social.html -%}
+        <div class="header-icons">
+          {%- if site.email -%}<a aria-label="Send email" href="mailto:{{ site.email | escape }}"><i class="social-icon fa fa-envelope"></i></a>{%- endif -%}
+          {%- if site.email -%}<a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/{{ site.facebook_username| cgi_escape | escape }}"><i class="social-icon fa fa-envelope" aria-hidden="true"></i></a>{%- endif -%}
+          {%- if site.email -%}<a aria-label="My Facebook" target="_blank" href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}"><i class="social-icon fa fa-envelope" aria-hidden="true"></i></a>{%- endif -%}
+          {%- if site.email -%}<a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/{{ site.facebook_username| cgi_escape | escape }}"><i class="social-icon fa fa-envelope" aria-hidden="true"></i></a>{%- endif -%}
+          {%- if site.email -%}<a aria-label="My Github" target="_blank" href="https://github.com/{{ site.facebook_username| cgi_escape | escape }}"><i class="social-icon fa fa-envelope" aria-hidden="true"></i></a>{%- endif -%}
+        </div>
       </div>
     </div>
   </div>
