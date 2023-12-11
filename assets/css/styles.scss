@@ -43,3 +43,7 @@ max-width: calc(1000px - (30px * 2)); // default is 800px instead of 1000px
 .btn:disabled {
   box-shadow: 0 0 10px red;
 }
+
+.site-nav .page-link {
+  text-decoration: none;
+}
