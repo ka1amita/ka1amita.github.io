@@ -1,7 +1,7 @@
 ---
 title: Botasana chatbot
 author: Matej Kala
-background: botasana.png
+background-img: botasana.png
 description: API with ChatGPT Integration
 excerpt:
 github_repository: botasana

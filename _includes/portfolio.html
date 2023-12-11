@@ -2,14 +2,14 @@
     {% for project in site.projects %}
   <div class="project">
     <div class="project-header">
-      <img class="project-header-img" src="{{ '/assets/images/project.png' | relative_url }}" alt="{{ project.title }}">
+      <img class="project-header-img" src="{{ baseurl }}/assets/images/{{ project.background-img }}" alt="{{ project.background }}">
       <a class="project-header-anchor" target="_blank" href="{{ project.url }}">
         <div class="project-header-content">
-            <h2>{{ project.title }}</h2>
-            <p>{{ project.description }}</p>
-            {%- if site.show_excerpts -%}
-              {{ project.excerpt }}
-            {%- endif -%}
+          <h2>{{ project.title | escape }}</h2>
+          <p>{{ project.description | escape }}</p>
+          {%- if site.show_excerpts -%}
+          {{ project.excerpt }}
+          {%- endif -%}
         </div>
         <div class="project-header-content-padding"></div>
       </a>
