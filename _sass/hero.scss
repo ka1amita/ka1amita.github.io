@@ -1,14 +1,25 @@
 .hero {
   position:relative;
 }
+
+/* hero img placeholder for low connection speed */
 .hero #hero-img {
   position: absolute;
   object-fit: cover;
   width: 100%;
   height: 100%;
   top: 0;
-  background-color: #324059;
+  background: #324059 url("/assets/images/hero_low.jpg") center center no-repeat fixed;
+  background-size: cover;
 }
+
+@media (max-width: 1600px) {
+  .hero #hero-img {
+    background: #324059 url("/assets/images/hero_50.jpg") center center no-repeat fixed;
+    background-size: cover;
+  }
+}
+/* end of hero img placeholder for low connection speed */
 
 .hero .site-header {
   border-bottom: 0 solid #e8e8e8;
