@@ -1,9 +1,10 @@
 <div class="hero">
   <picture>
-    <source media="(max-width: 400px)" srcset="{{ '/assets/images/hero_400.jpg' | relative_url }}">
-    <source media="(max-width: 800px)" srcset="{{ '/assets/images/hero_800.jpg' | relative_url }}">
-    <source media="(max-width: 1600px)" srcset="{{ '/assets/images/hero_1600.jpg' | relative_url }}">
-    <img id="hero-img" alt="Mountains over a lake under a night sky full of stars" src="{{ '/assets/images/hero_3200.jpg' | relative_url }}" loading="eager">
+    <source media="(max-height: 400px) and (max-width: 400px)" srcset="{{ '/assets/images/hero_400.jpg' | relative_url }}">
+    <source media="(max-height: 800px) and (max-width: 800px)" srcset="{{ '/assets/images/hero_800.jpg' | relative_url }}">
+    <source media="(max-height: 1280px) and (max-width: 1280px)" srcset="{{ '/assets/images/hero_1280.jpg' | relative_url }}">
+    <source media="(max-height: 1600px) and (max-width: 1600px)" srcset="{{ '/assets/images/hero_1600.jpg' | relative_url }}">
+    <img id="hero-img" alt="Mountains over a lake under a night sky full of stars" src="{{ '/assets/images/hero.jpg' | relative_url }}" loading="eager">
   </picture>
   {%- include header.html -%}
   <div class="page-content" aria-label="Content">
