@@ -13,6 +13,7 @@ techs:
   - junit5
   - docker
   - log4j
+  - thymeleaf 
 ---
 
 _Botasana_ is a chatbot that replies with humorously edited user prompt. Some words in the user
