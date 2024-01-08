@@ -1,7 +1,7 @@
 ---
 title: ToCLI
 author: Matej Kala
-background-img: tocli-app.jpg
+background-img: tocli.jpg
 description: Simple CLI application
 excerpt:
 github_repository: cli-todo-app
