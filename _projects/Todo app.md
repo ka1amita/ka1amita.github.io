@@ -7,7 +7,7 @@ excerpt:
 github_repository: todo-app
 live_url: 
 techs:
-  - mysql.svg
+  - mysql
   - java
   - spring
   - thymeleaf
