@@ -1,10 +1,10 @@
 ---
-title: Todo app
+title: Inventory
 author: Matej Kala
-background-img: todo-app.jpg
-description: Basic todo application
+background-img: inventory.jpg
+description: Basic inventory application
 excerpt:
-github_repository: todo-app
+github_repository: inventory
 live_url: 
 techs:
   - mysql
