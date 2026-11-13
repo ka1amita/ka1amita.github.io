@@ -1,0 +1,19 @@
+<!-- GoatCounter: counts the visit and records the share key from `?ref=<key>` as its referrer -->
+<script>
+  window.goatcounter = {no_onload: true};
+
+  function countVisit() {
+    var url = new URL(window.location.href);
+    var shareKey = url.searchParams.get('ref');
+    if (shareKey) {
+      window.goatcounter.count({referrer: shareKey});
+      // drop the key so a bookmarked or re-shared URL does not count again
+      url.searchParams.delete('ref');
+      window.history.replaceState(null, '', url.pathname + url.search + url.hash);
+    } else {
+      window.goatcounter.count();
+    }
+  }
+</script>
+<script data-goatcounter="https://{{ site.goatcounter_code }}.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js" onload="countVisit()"></script>
