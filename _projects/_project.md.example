@@ -1,0 +1,14 @@
+---
+title: Project title
+author: Matej Kala
+background-img: project.jpg # file in assets/images/
+description: One-line description shown on the card and under the page title
+excerpt:
+github_repository: repository-name # under github.com/<github_username>/; omit to hide the button
+live_url: # omit to hide the "View Live" button
+techs: # each needs assets/icons/<tech>.svg
+  - java
+  - spring
+---
+
+Project page content in Markdown.
